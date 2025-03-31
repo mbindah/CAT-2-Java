@@ -2,17 +2,27 @@ public class Student {
     private String name;
     private int grade;
 
+    // Constructor
     public Student(String name, int grade) {
         this.name = name;
-        setGrade(grade);
+        this.grade = grade;
     }
 
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+    // Getters
+    public String getName() {
+        return name;
+    }
 
-    public int getGrade() { return grade; }
-    public void setGrade(int grade) {
-        if (grade >= 0 && grade <= 100) this.grade = grade;
-        else this.grade = 0;
+    public int getGrade() {
+        return grade;
+    }
+
+    public static void main(String[] args) {
+        Student student = new Student("Olive", 32);
+        System.out.println("Student Name: " + student.getName());
+        System.out.println("Grade: " + student.getGrade());
     }
 }
+
+
+

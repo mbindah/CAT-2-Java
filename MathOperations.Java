@@ -1,4 +1,5 @@
 public class MathOperations {
-    public int multiply(int a, int b) { return a * b; }
-    public int multiply(int a, int b, int c) { return a * b * c; }
+    public static void main(String[] args) {
+        System.out.println("MathOperations class is running.");
+    }
 }
